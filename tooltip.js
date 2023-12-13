@@ -32,9 +32,6 @@ class Tooltip extends HTMLElement{
     _showTooltip(){
         this._tooltipBox= document.createElement('div');
         this._tooltipBox.textContent =this._tooltipText;
-        this._tooltipBox.style.backgroundColor='black';
-        this._tooltipBox.style.color='white';
-        this._tooltipBox.style.position='absolute';
         this.shadowRoot.appendChild(this._tooltipBox);
     }
     _hideTooltip(){
